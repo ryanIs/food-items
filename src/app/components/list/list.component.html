@@ -1,0 +1,13 @@
+<div class="list-container">
+  <header>
+    {{ list.title }}<br>
+    {{ list.purchaseDate }}
+  </header>
+
+  <div class="list-items-container">
+    
+    <app-list-item *ngFor="let listItem of list.items" [listItem]="listItem"></app-list-item>
+
+  </div>
+
+</div>
